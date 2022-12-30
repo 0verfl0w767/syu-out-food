@@ -26,6 +26,8 @@ This project is a long-term project.
 > **Frontend**
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="100" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="100" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg" width="100" />
 
 ---
 
@@ -57,6 +59,4 @@ This project is a long-term project.
 
 <div style="display: inline-block">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original-wordmark.svg" height="100" width="200" />
-  <img src="https://www.vultr.com/media/media_card_1200x630.png" height="100" width="200" />
-  <img src="https://www.conoha.jp/common_38448/images/logo_conoha.svg" height="100" width="200"/>
 </div>
