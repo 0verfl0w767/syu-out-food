@@ -1,11 +1,11 @@
-"use client";
+'use client'
 
-import Spinner from "react-bootstrap/Spinner";
+import Spinner from 'react-bootstrap/Spinner'
 
-export default function BasicExample() {
+export default function Loading() {
   return (
     <Spinner animation="border" role="status">
       <span className="visually-hidden">Loading...</span>
     </Spinner>
-  );
+  )
 }
