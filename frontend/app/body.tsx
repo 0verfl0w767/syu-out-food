@@ -13,7 +13,7 @@ import TestModal from './modal'
 
 function BodyPage() {
   const target = useRef(null)
-  const preventRef = useRef(true)
+  const preventRef = useRef<boolean>(true)
   const [Page, setPage] = useState<number>(1)
   const [List, setList] = useState<number[]>([])
   const [Load, setLoad] = useState<boolean>(false)
@@ -50,7 +50,7 @@ function BodyPage() {
 
   useEffect(() => {
     getData()
-  }, [])
+  }, [Page])
 
   return (
     <>
@@ -58,7 +58,13 @@ function BodyPage() {
         {List && (
           <>
             {List.map((element) => (
-              <div key={element}>
+              <div
+                key={element}
+                onClick={() => {
+                  setModalShow(true)
+                  setModalShowPage(element)
+                }}
+              >
                 <Card style={{ marginTop: '10px' }}>
                   <Card.Header>{element}</Card.Header>
                   <Card.Img
@@ -69,17 +75,7 @@ function BodyPage() {
                     <Card.Text>test..</Card.Text>
                   </Card.Body>
                   <ListGroup className="list-group-flush">
-                    <ListGroup.Item>
-                      <Button
-                        variant="outline-secondary"
-                        onClick={() => {
-                          setModalShow(true)
-                          setModalShowPage(element)
-                        }}
-                      >
-                        test..
-                      </Button>
-                    </ListGroup.Item>
+                    <ListGroup.Item>test..</ListGroup.Item>
                   </ListGroup>
                 </Card>
               </div>

@@ -12,9 +12,9 @@ function TestModal(props: any) {
         <p>...</p>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="outline-secondary" onClick={props.onHide}>
+        {/* <Button variant="outline-secondary" onClick={props.onHide}>
           닫기
-        </Button>
+        </Button> */}
       </Modal.Footer>
     </Modal>
   )

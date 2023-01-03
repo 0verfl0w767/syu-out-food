@@ -7,19 +7,20 @@
 .content h2 {
   color: #fff;
   font-size: 4em;
-  font-family: "NanumSquare", sans-serif;
+  font-family: 'NanumSquare', sans-serif;
   position: absolute;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 
 .content h2:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 2px #03a9f4;
+  -webkit-text-stroke: 3px #ffffff;
 }
 
 .content h2:nth-child(2) {
-  color: #03a9f4;
-  animation: animate 2s ease-in-out infinite;
+  color: #ffffff;
+  animation: animate 3s ease-in-out infinite;
 }
 
 @keyframes animate {
